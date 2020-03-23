@@ -33,7 +33,7 @@ function viewlist(req, res) {
 
     console.log("view Api called");
     console.log(req.query);
-    if (req.query) {
+    if (req.query.id != null) {
         let req_id = req.query.id;
         let match = false
         for (let i = 0; i < data.length; i++) {
